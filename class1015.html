@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		.cPart1 {
+			
+			width: 10vw;
+			height: 5vh;
+			transform: translate(10vw, 10vh);
+			background-color: black;
+		}
+		
+		.cPart2 {
+			width: 10vw;
+			height: 5vh;
+			transform: translate(6vw, 12vh) rotateZ(90deg);
+			background-color: black;
+			animation-name: wiggle;
+			animation-duration: 5s;
+			animation-direction:alternate;
+			animation-iteration-count: infinite;
+		}
+
+		.cPart3 {
+			width: 10.5vw;
+			height: 5vh;
+			transform: translate(9.65vw, 16vh);
+			background-color: black;
+			animation-name: change;
+			animation-duration: 3s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes change {
+			from {
+				background-color: red;
+			}
+			to {
+				background-color: yellow;
+			}
+		}
+		@keyframes wiggle {
+			from {
+				width: 50vw;
+				height: 10vh;
+				transform: translate(25vw, 45vh);
+			}
+			to {
+				width: 50vw;
+				height: 50vh;
+				transform: translate(25vw, 25vh) rotateZ(360deg);
+			}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- C -->
+	<div class = "cPart1"></div>
+	<div class = "cPart2"></div>
+	<div class = "cPart3"></div>
+
+	<div class = "hPart1"></div>
+	<div class = "hPart2"></div>
+	<div class = "hPart3"></div>
+
+</body>
+</html>
